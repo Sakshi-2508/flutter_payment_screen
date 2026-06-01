@@ -1,6 +1,12 @@
 name: flutter_payment_screen
-description: A beautiful and customizable payment UI package for Flutter.
+description: Beautiful and customizable payment screens for Flutter apps with UPI, Card, Wallet and Cash on Delivery support.
 version: 0.0.1
+
+
+homepage: https://github.com/Sakshi-2508/flutter_payment_screen
+repository: https://github.com/Sakshi-2508/flutter_payment_screen
+issue_tracker: https://github.com/Sakshi-2508/flutter_payment_screen/issues
+
 
 environment:
   sdk: ^3.11.5

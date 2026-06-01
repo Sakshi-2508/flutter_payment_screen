@@ -1,11 +1,12 @@
 ## 0.0.1
 
 - Initial release
-- Flutter Payment Screen
-- UPI Payment Screen
-- Order Summary Card
-- Coupon Field
-- Secure Payment Banner
-- Payment Success Screen
-- Payment Failed Screen
-- Dark Mode Support
+- Beautiful payment screen
+- UPI payment screen
+- Credit & Debit card payment screen
+- Wallet payment screen
+- Cash on delivery screen
+- Payment success screen
+- Payment failed screen
+- Dark mode support
+- Customizable UI
