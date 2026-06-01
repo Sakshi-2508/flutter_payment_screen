@@ -1,36 +1,47 @@
 # 💳 Flutter Payment Screen
 
-A beautiful and customizable payment UI package for Flutter.
+A modern and customizable payment UI package for Flutter.
 
-Build modern checkout experiences in minutes with ready-to-use payment screens, payment methods, order summaries, coupon fields, secure payment banners, and payment status screens.
+Build beautiful checkout experiences with ready-to-use payment screens including UPI, Credit & Debit Cards, Wallets, Cash on Delivery, Payment Success, and Payment Failure screens.
+
+Perfect for e-commerce, booking, subscription, and service-based Flutter applications.
 
 ---
 
 ## ✨ Features
 
-* 💳 Beautiful Payment Screen
-* 📱 UPI Payment Screen
-* 🧾 Order Summary Card
-* 🎟 Coupon Field
-* 🔒 Secure Payment Banner
-* ✅ Payment Success Screen
-* ❌ Payment Failed Screen
-* 🌙 Dark Mode Support
-* 🎨 Fully Customizable
-* ⚡ Clean & Simple API
+- 💳 Modern Payment Screen
+- 📱 UPI Payment Screen
+- 💳 Credit & Debit Card Screen
+- 👛 Wallet Payment Screen
+- 📦 Cash On Delivery Screen
+- ✅ Payment Success Screen
+- ❌ Payment Failed Screen
+- 🎨 Beautiful Blue-Purple Theme
+- ⚡ Clean & Developer-Friendly API
+- 🔧 Easy Customization
+- 📱 Responsive UI
+
+---
+
+## 🎬 Demo
+
+<p>
+  <img src="example/assets/MP4/video.gif" width="280"/>
+</p>
 
 ---
 
 ## 📦 Installation
 
-Add this to your `pubspec.yaml`:
+Add the dependency:
 
 ```yaml
 dependencies:
   flutter_payment_screen: ^0.0.1
 ```
 
-Then run:
+Install packages:
 
 ```bash
 flutter pub get
@@ -38,62 +49,68 @@ flutter pub get
 
 ---
 
-## 🚀 Usage
-
-### Basic Payment Screen
+## 🚀 Quick Start
 
 ```dart
 FlutterPaymentScreen(
   amount: 499,
   currency: "₹",
   onPay: () {
-    print("Payment Clicked");
+    print("Payment Started");
   },
 )
 ```
 
 ---
 
-### Order Summary Card
+## 💳 Available Payment Screens
 
-```dart
-OrderSummaryCard(
-  subtotal: 499,
-  discount: 50,
-  deliveryFee: 20,
-  tax: 10,
-)
-```
-
----
-
-### Coupon Field
-
-```dart
-CouponField(
-  onApply: () {
-    print("Coupon Applied");
-  },
-)
-```
-
----
-
-### Secure Payment Banner
-
-```dart
-const SecurePaymentBanner()
-```
-
----
-
-### UPI Payment Screen
+### 📱 UPI Payment
 
 ```dart
 Navigator.push(
   context,
   MaterialPageRoute(
-    builder: (_) => const UpiPaymentScreen(
+    builder: (_) => UpiPaymentScreen(
+      amount: 499,
+    ),
+  ),
+);
+```
+
+### 💳 Card Payment
+
+```dart
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (_) => CardPaymentScreen(
+      amount: 499,
+    ),
+  ),
+);
+```
+
+### 👛 Wallet Payment
+
+```dart
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (_) => WalletPaymentScreen(
+      amount: 499,
+    ),
+  ),
+);
+```
+
+### 📦 Cash On Delivery
+
+```dart
+Navigator.push(
+  context,
+  MaterialPageRoute(
+    builder: (_) => CashOnDeliveryScreen(
       amount: 499,
     ),
   ),
@@ -102,7 +119,7 @@ Navigator.push(
 
 ---
 
-### Payment Success Screen
+## ✅ Payment Success Screen
 
 ```dart
 const PaymentSuccessScreen()
@@ -110,7 +127,7 @@ const PaymentSuccessScreen()
 
 ---
 
-### Payment Failed Screen
+## ❌ Payment Failed Screen
 
 ```dart
 const PaymentFailedScreen()
@@ -120,25 +137,28 @@ const PaymentFailedScreen()
 
 ## 🎯 Included Widgets
 
-* FlutterPaymentScreen
-* UpiPaymentScreen
-* OrderSummaryCard
-* CouponField
-* SecurePaymentBanner
-* PaymentSuccessScreen
-* PaymentFailedScreen
-* PaymentMethodTile
+- FlutterPaymentScreen
+- UpiPaymentScreen
+- CardPaymentScreen
+- WalletPaymentScreen
+- CashOnDeliveryScreen
+- PaymentSuccessScreen
+- PaymentFailedScreen
+- PaymentMethodTile
 
 ---
 
-## 📸 Preview
+## 🌟 Why Flutter Payment Screen?
 
-Add screenshots and demo GIFs here.
+Most payment UI implementations require developers to build multiple screens from scratch.
 
-```md
-assets/screenshots/payment_screen.png
-assets/screenshots/upi_screen.png
-```
+Flutter Payment Screen provides:
+
+- Complete checkout flow UI
+- Consistent design language
+- Modern user experience
+- Easy integration
+- Production-ready structure
 
 ---
 
@@ -146,20 +166,18 @@ assets/screenshots/upi_screen.png
 
 ### Version 0.0.2
 
-* Google Pay UI
-* PhonePe UI
-* Paytm UI
-* Beautiful UPI App Cards
-* Card Payment Screen
-* Wallet Payment Screen
-* Cash On Delivery Screen
+- Coupon Support
+- Order Summary Widget
+- Card Type Detection
+- Enhanced UPI Experience
+- More Customization Options
 
 ### Version 0.0.3
 
-* Glassmorphism Support
-* Payment Animations
-* Premium Themes
-* More Customization
+- Payment Animations
+- Premium Themes
+- Glassmorphism Support
+- Additional Payment Methods
 
 ---
 
@@ -171,6 +189,6 @@ Contributions, issues, and feature requests are welcome.
 
 ## ⭐ Support
 
-If you like this package, please give it a star on GitHub and share it with the Flutter community.
+If you like this package, please consider starring the repository and sharing it with the Flutter community.
 
 Built with ❤️ for Flutter Developers.
