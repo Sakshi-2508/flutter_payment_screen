@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_payment_screen/screens/upi_payment_screen.dart';
+import 'package:flutter_payment_screen/src/screens/card_payment_screen.dart';
+import 'package:flutter_payment_screen/src/screens/cash_on_delivery_screen.dart';
+import 'package:flutter_payment_screen/src/screens/upi_payment_screen.dart';
+import 'package:flutter_payment_screen/src/screens/wallet_payment_screen.dart';
 import 'payment_method.dart';
 import 'payment_method_tile.dart';
 import 'order_summary_card.dart';
@@ -83,6 +86,45 @@ class _FlutterPaymentScreenState extends State<FlutterPaymentScreen> {
                       context,
                       MaterialPageRoute(
                         builder: (_) => UpiPaymentScreen(
+                          amount: widget.amount,
+                          currency: widget.currency,
+                        ),
+                      ),
+                    );
+                    return;
+                  }
+
+                  if (method.type == PaymentMethodType.card) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => CardPaymentScreen(
+                          amount: widget.amount,
+                          currency: widget.currency,
+                        ),
+                      ),
+                    );
+                    return;
+                  }
+
+                  if (method.type == PaymentMethodType.wallet) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => WalletPaymentScreen(
+                          amount: widget.amount,
+                          currency: widget.currency,
+                        ),
+                      ),
+                    );
+                    return;
+                  }
+
+                  if (method.type == PaymentMethodType.cashOnDelivery) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => CashOnDeliveryScreen(
                           amount: widget.amount,
                           currency: widget.currency,
                         ),

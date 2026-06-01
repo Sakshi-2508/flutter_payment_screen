@@ -7,3 +7,5 @@ export 'src/secure_payment_banner.dart';
 export 'src/payment_success_screen.dart';
 export 'src/payment_failed_screen.dart';
 export 'src/screens/upi_payment_screen.dart';
+export 'src/screens/wallet_payment_screen.dart';
+export 'src/screens/card_payment_screen.dart';
