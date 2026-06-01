@@ -194,7 +194,7 @@ If you like this package, please consider starring the repository and sharing it
 Built with ❤️ for Flutter Developers.
 
 # GitHub Link
-( https://github.com/Sakshi-2508/flutter_payment_screen ) <br>
+https://github.com/Sakshi-2508/flutter_payment_screen <br>
 
 # Package Preview Link
-( https://pub.dev/packages/flutter_payment_screen )
+https://pub.dev/packages/flutter_payment_screen
